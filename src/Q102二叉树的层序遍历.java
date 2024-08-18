@@ -43,7 +43,8 @@ class Solution {
             return ret;
         }
         //使用 queue 是相比 arraylist 更好的选择
-        //Deque（双端队列）在循环中一边减少一边增加是更合适的，而 ArrayList 则不太适合这种操作。
+        //Deque（双端队列）在foreach循环中并不能一边减少一边增加是更合适的
+        //所以只能用 for i 和 while
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         queue.offer(root);
         while (!queue.isEmpty()) {
