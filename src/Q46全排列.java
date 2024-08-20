@@ -20,5 +20,8 @@ public class Q46全排列 {
             backTrack(nums,current,result);
             current.remove(current.size()-1);
         }
+        //第 n 层递归考虑第 n 个元素
+        //如第一层递归考虑第一个元素从 1 到 n 的选择
+        // 第二层递归考虑第二个元素从 1 到 n 的选择
     }
 }
